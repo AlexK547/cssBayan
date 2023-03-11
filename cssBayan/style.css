@@ -14,21 +14,38 @@ body {
 }
 
 .accordion {
+  width: 35em;
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.accordion__item {
+  width: 32em;
+  margin-bottom: 1.5em;
+  border-top: 0.1em solid #ccc;
+}
+.accordion__title {
+  font-size: 1.5em;
+}
+.accordion__title:hover ~ .accordion__img {
+  display: block;
+}
+p {
+  margin-left: 0.5em;
+}
 .accordion__input {
   width: 0;
   height: 0;
 }
-.accordion__input:checked ~ .accordion__img {
-  display: block;
-}
 .accordion__img {
   display: none;
 }
+.accordion__input:checked ~ .accordion__img {
+  display: block;
+}
+
 img {
   width: 30em;
 }
