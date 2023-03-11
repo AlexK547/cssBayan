@@ -35,8 +35,8 @@ h1 {
   transition: all 0.3s;
 }
 .accordion__item:hover .accordion__img {
-  display: block;
-  transition: all 0.3s;
+  max-height: 900px;
+  transition: all 1s;
 }
 .accordion__title {
   font-size: 1.5em;
@@ -50,22 +50,24 @@ p {
 .accordion__input {
   width: 0;
   height: 0;
+  opacity: 0;
 }
 .accordion__img {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
   margin-top: 0.5em;
-  transition: all 0.3s;
+  transition: all .5s;
 }
 img {
   width: 36em;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .accordion__input:checked ~ .accordion__img {
-  display: block;
-  transition: all 0.3s;
+  max-height: 900px;
+  transition: 2s;
 }
-.accordion__input:checked + .accordion__title {
+.accordion__input:checked ~ .accordion__title {
   color: rgb(0, 0, 194);
 }
 
