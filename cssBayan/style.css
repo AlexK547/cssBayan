@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: calc(100vw-40px);
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.accordion__input {
+  width: 0;
+  height: 0;
+}
+.accordion__input:checked ~ .accordion__img {
+  display: block;
+}
+.accordion__img {
+  display: none;
+}
+img {
+  width: 30em;
+}
