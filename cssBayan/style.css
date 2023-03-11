@@ -42,6 +42,14 @@ h1 {
   transform: rotate(180deg);
 }
 .accordion__title {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  /* font-size: 1.5em; */
+  width: 100%;
+  transition: all 0.3s;
+}
+.accordion__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,7 +78,9 @@ p {
 .accordion__img {
   max-height: 0;
   overflow: hidden;
-  margin-top: 0.5em;
+  margin: 0.5em;
+  display: flex;
+  justify-content: center;
   transition: all .5s;
 }
 img {
@@ -79,14 +89,14 @@ img {
 }
 
 
-.accordion__input:checked ~ .accordion__img {
+.accordion__input:checked ~ .accordion__title > .accordion__img {
   max-height: 900px;
   transition: 2s;
 }
 .accordion__input:checked ~ .accordion__title {
   color: rgb(0, 0, 194);
 }
-.accordion__input:checked ~ .accordion__title > .accordion__icon {
+.accordion__input:checked ~ .accordion__title > .accordion__content > .accordion__icon {
   transform: rotate(180deg);
 }
 
