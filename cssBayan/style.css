@@ -16,7 +16,7 @@ h1 {
   transition: all 0.3s;
 }
 .accordion {
-  width: 45em;
+  width: 40em;
   margin-top: 2em;
   display: flex;
   flex-direction: column;
@@ -52,11 +52,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.5em;
   width: 100%;
   transition: all 0.3s;
 }
 p {
+  font-size: 1.5em;
   margin-left: 0.5em;
 }
 .accordion__icon {
@@ -116,9 +116,9 @@ img {
     width: 30em;
   }
   .accordion__item {
-    width: 25em;
+    width: 30em;
   }
-  .accordion__title {
+  p {
     font-size: 1em;
   }
   img {
@@ -131,14 +131,16 @@ img {
     font-size: 1.2em;
   }
   .accordion {
-    width: 18em;
+    width: 16em;
   }
   .accordion__item {
     width: 16em;
   }
   .accordion__title {
-    font-size: 0.8em;
     cursor: default;
+  }
+  p {
+    font-size: 0.8em;
   }
   img {
     width: 14em;
