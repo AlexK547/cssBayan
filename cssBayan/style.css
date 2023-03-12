@@ -100,10 +100,13 @@ img {
 .accordion__input:checked ~ .accordion__title {
   color: black;
 }
+.accordion__input:active ~ .accordion__title {
+  color: blue;
+}
 .accordion__input:checked ~ .accordion__title > .accordion__content > .accordion__icon {
-  display: block;
   transform: rotate(180deg);
 }
+
 
 @media (max-width: 820px) {
   h1 {
