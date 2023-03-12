@@ -38,9 +38,9 @@ h1 {
   max-height: 900px;
   transition: all 1s;
 }
-/* .accordion__item:hover .accordion__icon {
+.accordion__item:hover .accordion__icon {
   transform: rotate(180deg);
-} */
+}
 .accordion__title {
   width: 100%;
   transition: all 0.3s;
