@@ -35,7 +35,7 @@ h1 {
   transition: all 0.3s;
 }
 .accordion__item:hover .accordion__img {
-  max-height: 900px;
+  max-height: 55em;
   transition: all 1s;
 }
 .accordion__item:hover .accordion__icon {
@@ -62,8 +62,8 @@ p {
 .accordion__icon {
   display: none;
   margin-right: 1em;
-  width: 15px;
-  height: 15px;
+  width: 1em;
+  height: 1em;
   background: url(./assets/arrow_down.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -94,7 +94,7 @@ img {
   color: black;
 } 
 .accordion__input:checked ~ .accordion__title > .accordion__img {
-  max-height: 900px;
+  max-height: 55em;
   transition: 1s;
 }
 .accordion__input:checked ~ .accordion__title {
@@ -137,7 +137,7 @@ img {
     width: 16em;
   }
   .accordion__title {
-    cursor: default;
+    cursor: none;
   }
   p {
     font-size: 0.8em;
